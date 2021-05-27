@@ -1,31 +1,47 @@
-from crawlers.claires_crawler import ClairsCrawler
-from crawlers.five_below_crawler import FiveBelowCrawler
-from crawlers.costco import CostcoCrawler
-from crawlers.gamestop import GSCrawler
-from crawlers.paper_store_c import PaperStoreCrawler
-from crawlers.walmart import WalmartCrawler
-from crawlers.walgreens import WalgreensCrawler
-from crawlers.target import TargetCrawler
+from crawlers.crawlers import CostcoCrawler, GSCrawler, TargetCrawler, WalgreensCrawler, WalmartCrawler, ClairsCrawler, FiveBelowCrawler, PaperStoreCrawler
+from update_trigger import update_site_live, upload_images
+import logging
+from xl_helpx import delete_updated_items_ss
 
-from update_trigger import update_site
-
+logging.basicConfig(filename="crawler_log.txt", level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 if __name__ == "__main__":
 
-    five_below_crawler = FiveBelowCrawler().run_crawler()
-    paper_store = PaperStoreCrawler().run()
-    claires = ClairsCrawler().run()
-    costco = CostcoCrawler().run()
-    #
-    # # # TODO fred meyer
-    # # # fm = FMCrawler().run()
-    #
-    game_stop = GSCrawler().run()
-    walmart = WalmartCrawler().run()
-    walgreens = WalgreensCrawler().run()
-    target = TargetCrawler().run()
+    checked_sites = []
 
-    if walmart:
-        update_site()
+    try:
+        five_below_crawler = FiveBelowCrawler().run_crawler()
+        checked_sites.append(five_below_crawler)
+    except:
+        logging.exception('Five Below error!')
+
+    try:
+        paper_store = PaperStoreCrawler().run()
+        checked_sites.append(paper_store)
+    except:
+        logging.exception('Paper Store Error error!')
+
+    try:
+        claires = ClairsCrawler().run()
+        checked_sites.append(claires)
+    except:
+        logging.exception('Claires Error error!')
+
+    try:
+        costco = CostcoCrawler().run()
+        checked_sites.append(costco)
+    except:
+        logging.exception('Costco Error error!')
+
+    # game_stop = GSCrawler().run()
+    # walmart = WalmartCrawler().run()
+    # walgreens = WalgreensCrawler().run()
+    # target = TargetCrawler().run()
+
+    if True in checked_sites:
+        update_site_live()
+        upload_images()
+        delete_updated_items_ss()
+
 
 

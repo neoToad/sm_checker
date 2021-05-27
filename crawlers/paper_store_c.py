@@ -6,9 +6,9 @@ from selenium.webdriver.support import expected_conditions as EC
 
 import os
 import openpyxl
-from xl_helpx import move_to_
-from test_soup import download_image
-from update_trigger import update_site
+from sm_checker.xl_helpx import move_to_
+from sm_checker.test_soup import download_image
+from sm_checker.update_trigger import update_site
 import time
 
 import requests
@@ -30,8 +30,8 @@ class PaperStoreCrawler:
 
         self.change = False
 
-        self.spread_filepath = os.path.join('C:/Users/colin/PycharmProjects/checker', 'items_data', 'paper_store.xlsx')
-        self.update_ss = os.path.join('C:/Users/colin/PycharmProjects/checker', 'items_data', 'master_upload.xlsx')
+        self.spread_filepath = os.path.join('C:/Users/colin/PycharmProjects/checker/sm_checker', 'items_data', 'paper_store.xlsx')
+        self.update_ss = os.path.join('C:/Users/colin/PycharmProjects/checker/sm_checker', 'items_data', 'master_upload.xlsx')
         self.wb = openpyxl.load_workbook(self.spread_filepath)
         self.ws = self.wb['master']
         self.wb2 = openpyxl.load_workbook(self.update_ss)
@@ -150,4 +150,6 @@ class PaperStoreCrawler:
         self.driver.close()
 
         return self.change
+
+
 

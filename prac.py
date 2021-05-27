@@ -1,20 +1,17 @@
-from bs4 import BeautifulSoup as BSHTML
-from urllib.request import Request, urlopen
+import re
+full_name = "new!\
+squishmallows™ sealife squad 5in\
+$4.00"
 
+def get_size(full_name):
+    regexp = re.compile(r'in')
+    regexp2 = re.compile(r"'")
+    for x in full_name.split():
+        if regexp.search(x):
+            return x
+        if regexp2.search(x):
+            return x
+    return 'N/A'
 
-req = Request('https://www.thepaperstore.com/c/squishmallows', headers={'User-Agent': 'Mozilla/5.0'})
-page = urlopen(req)
-soup = BSHTML(page, 'lxml')
-images = soup.findAll('img')
-for image in images:
-    try:
-        #print image source
-        print("src: " + image['src'])
-    except KeyError:
-        pass
-
-    try:
-        #print image source
-        print("alt: " + image['alt'])
-    except KeyError:
-        pass
+print(get_size(full_name))
+print(full_name.split())

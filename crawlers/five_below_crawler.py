@@ -8,8 +8,8 @@ import time
 import re
 
 import openpyxl
-from test_soup import find_styles, get_image
-from xl_helpx import move_to_
+from sm_checker.test_soup import find_styles, get_image
+from sm_checker.xl_helpx import move_to_
 
 import os
 
@@ -29,11 +29,11 @@ class FiveBelowCrawler:
 
         self.change = False
 
-        self.spread_filepath = os.path.join('C:/Users/colin/PycharmProjects/checker', 'items_data', 'fb_sm.xlsx')
+        self.spread_filepath = os.path.join('C:/Users/colin/PycharmProjects/checker/sm_checker', 'items_data', 'fb_sm.xlsx')
         self.wb = openpyxl.load_workbook(self.spread_filepath)
 
         print(self.spread_filepath)
-        self.update_ss = os.path.join('C:/Users/colin/PycharmProjects/checker', 'items_data', 'master_upload.xlsx')
+        self.update_ss = os.path.join('C:/Users/colin/PycharmProjects/checker/sm_checker', 'items_data', 'master_upload.xlsx')
 
         self.ws = self.wb['master']
         self.wb2 = openpyxl.load_workbook(self.update_ss)
@@ -164,7 +164,7 @@ class FiveBelowCrawler:
         self.ws.cell(column=4, row=self.newRowLocation, value=self.driver.current_url)
         self.ws.cell(column=5, row=self.newRowLocation, value=str(image_file))
         self.get_short_name(self.newRowLocation)
-        move_to_(self.wb, self.wb2, move_loc)
+        move_to_(self.newRowLocation, self.wb, self.wb2, move_loc)
         self.newRowLocation += 1
 
     def get_short_name(self, row):
@@ -210,7 +210,3 @@ class FiveBelowCrawler:
         self.driver.quit()
         return self.change
 
-
-# crawler = FiveBelowCrawler()
-#
-# crawler.run_crawler()

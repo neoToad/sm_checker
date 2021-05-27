@@ -6,11 +6,11 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 from fake_useragent import UserAgent
 
+import re
 import os
 import openpyxl
 from xl_helpx import move_to_
 from test_soup import download_image
-from update_trigger import update_site
 import time
 
 import requests
@@ -19,7 +19,7 @@ from urllib.request import Request, urlopen
 
 
 class Crawler:
-    def __init__(self, site_to_check, local_ss):
+    def __init__(self, site_to_check, local_ss, listing_class_name):
         self.site_to_check = site_to_check
 
         options = Options()
@@ -36,8 +36,8 @@ class Crawler:
 
         self.change = False
 
-        self.spread_filepath = os.path.join('C:/Users/colin/PycharmProjects/checker', 'items_data', local_ss)
-        self.update_ss = os.path.join('C:/Users/colin/PycharmProjects/checker', 'items_data', 'master_upload.xlsx')
+        self.spread_filepath = os.path.join('C:/Users/colin/PycharmProjects/checker/sm_checker', 'items_data', local_ss)
+        self.update_ss = os.path.join('C:/Users/colin/PycharmProjects/checker/sm_checker', 'items_data', 'master_upload.xlsx')
         self.wb = openpyxl.load_workbook(self.spread_filepath)
         self.ws = self.wb['master']
         self.wb2 = openpyxl.load_workbook(self.update_ss)
@@ -48,27 +48,53 @@ class Crawler:
         self.wanted_items = []
         self.newRowLocation = self.ws.max_row + 1
 
-    def add_new_items(self, class_name, site_name):
+        self.listing_class_name = listing_class_name
+
+    def add_new_items(self, class_name, site_name, price_name, price_found=None):
+        spreadsheet_items = self.load_spread_data()
+
+        for item in self.wanted_items:
+            self.click_item(item, spreadsheet_items, class_name, site_name, price_name, price_found)
+
+    def load_spread_data(self):
         spreadsheet_items = []
         for row_num in range(2, self.ws.max_row + 1):
             spreadsheet_items.append(self.ws.cell(row=row_num, column=1).value)
+        return spreadsheet_items
 
-        for item in self.wanted_items:
-            if item not in spreadsheet_items:
-                to_click = WebDriverWait(self.driver, self.timeout).until(EC.element_to_be_clickable((By.PARTIAL_LINK_TEXT, item)))
-                print(item)
-                to_click.click()
-                image = WebDriverWait(self.driver, self.timeout).until(EC.element_to_be_clickable((By.CLASS_NAME, class_name)))
-                price_e = WebDriverWait(self.driver, self.timeout).until(EC.element_to_be_clickable((By.CLASS_NAME, "price-characteristic")))
-                price = price_e.get_attribute('content')
-                print(image.get_attribute("src"))
-                image_name = download_image(image.get_attribute("src"))
-                self.update_row(item, 'None', 'Yes', image_name, 'to_upload', site_name, price)
-                self.driver.back()
-                self.change = True
+    def click_item(self, item, spreadsheet_items, class_name, site_name, price_name, price_found):
+        if item not in spreadsheet_items:
+            to_click = WebDriverWait(self.driver, self.timeout).until(EC.element_to_be_clickable((By.PARTIAL_LINK_TEXT, item)))
+            print(item)
+            to_click.click()
+            self.find_image_and_price(item, class_name, site_name, price_name, price_found)
+
+    def find_image_and_price(self, item, class_name, site_name, price_name, price_found):
+        image = self.get_image(class_name)
+        price_e = self.get_price(price_name)
+
+        price = self.check_price_found(price_found, price_e)
+        print(image.get_attribute("src"))
+        image_name = download_image(image.get_attribute("src"))
+        self.update_row(item, 'None', 'Yes', image_name, 'to_upload', site_name, price)
+        self.driver.back()
+        self.change = True
+
+    def check_price_found(self, price_found, price_element):
+        if price_found:
+            return price_element.get_attribute(price_found)
+        else:
+            print(price_element.text)
+            return price_element.text
+
+    def get_image(self, class_name):
+        return WebDriverWait(self.driver, self.timeout).until(EC.element_to_be_clickable((By.CLASS_NAME, class_name)))
+
+    def get_price(self, price_name):
+        return self.driver.find_element_by_class_name(price_name)
 
     def update_row(self, series_name, style, in_stock, image_file, move_loc, site_name, price):
-        short_name = self.get_short_name(series_name)
+        short_name = self.get_short_name(series_name, style)
         size = self.get_size(series_name)
         self.ws.cell(column=1, row=self.newRowLocation, value=series_name)
         self.ws.cell(column=2, row=self.newRowLocation, value=short_name)
@@ -82,11 +108,21 @@ class Crawler:
         move_to_(self.newRowLocation, self.wb, self.wb2, move_loc)
         self.newRowLocation += 1
 
-    def get_short_name(self, full_name):
-        return full_name.split('"')[-1].split('-')[0]
+    def get_short_name(self, full_name, style):
+        try:
+            return full_name.split('"')[-1].split('-')[0]
+        except AttributeError:
+            return ' '
 
     def get_size(self, full_name):
-        return full_name.split('"')[-1]
+        regexp = re.compile(r'"')
+        regexp2 = re.compile(r"'")
+        for x in full_name.split():
+            if regexp.search(x):
+                return x
+            if regexp2.search(x):
+                return x
+        return 'N/A'
 
     # Out of stock to delete empty rows one big function
     def out_of_stock(self):
@@ -99,6 +135,7 @@ class Crawler:
 
     def check_for_series(self, spreadsheet_items):
         series_still_available = [series for series in self.wanted_items]
+        print(series_still_available)
         out_of_stock_series = self.diff(series_still_available, spreadsheet_items)
 
         self.delete_oos_series(out_of_stock_series)
@@ -143,24 +180,27 @@ class Crawler:
             # exclude offset of rows through each iteration
             index_row = list(map(lambda k: k - 1, index_row))
 
-    def run(self):
-        items = self.driver.find_elements_by_tag_name('p')
-
-        # # Add items on site to list
-        for x in items:
-            if x.get_attribute('class') == 'listing__name bold ng-binding':
-                self.wanted_items.append(x.text)
-
-        # check if an item is now out of stock
-        self.out_of_stock()
-
-        self.add_new_items(None)
-
+    def close_workbooks(self):
         self.wb.save(self.spread_filepath)
         self.wb.close()
         self.wb2.save(self.update_ss)
         self.wb2.close()
 
+    def load_items_from_site(self, class_name):
+        # Add items on site to list
+        items = self.driver.find_elements_by_class_name(class_name)
+        for x in items:
+            self.wanted_items.append(x.text)
+
+    def run(self):
+        self.load_items_from_site(self.listing_class_name)
+
+        # check if an item is now out of stock
+        self.out_of_stock()
+
+        self.add_new_items(self.class_name, self.site_name, self.price_name, price_found=None)
+
+        self.close_workbooks()
         self.driver.close()
 
         return self.change

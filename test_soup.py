@@ -2,6 +2,7 @@ import re
 import requests
 from bs4 import BeautifulSoup
 import os
+import random
 
 
 def find_styles(URL):
@@ -30,13 +31,16 @@ def get_image(url, style, class_attr):
     return download_image(img_to_download[0])
 
 
-def download_image(image_url, first_sep='/', sec_sep='?'):
+def download_image(image_url, first_sep='/', sec_sep='?', rd=False):
     """
         Downloads a file given an URL and puts it in the folder `pathname`
 
         """
-
-    local_filename = image_url.split(first_sep)[-1].split(sec_sep)[0] + '.jpg'
+    if rd:
+        rand_num = random.randint(1, 1000)
+        local_filename = str(rand_num) + image_url.split(first_sep)[-1].split(sec_sep)[0] + '.jpg'
+    else:
+        local_filename = image_url.split(first_sep)[-1].split(sec_sep)[0] + '.jpg'
 
     complete_filename = os.path.join('C:/Users/colin/PycharmProjects/', 'squish_site/media/images', local_filename)
 
