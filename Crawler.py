@@ -94,7 +94,7 @@ class Crawler:
         return self.driver.find_element_by_class_name(price_name)
 
     def update_row(self, series_name, style, in_stock, image_file, move_loc, site_name, price):
-        short_name = self.get_short_name(series_name, style)
+        short_name = self.get_short_name(series_name)
         size = self.get_size(series_name)
         self.ws.cell(column=1, row=self.newRowLocation, value=series_name)
         self.ws.cell(column=2, row=self.newRowLocation, value=short_name)
@@ -108,7 +108,7 @@ class Crawler:
         move_to_(self.newRowLocation, self.wb, self.wb2, move_loc)
         self.newRowLocation += 1
 
-    def get_short_name(self, full_name, style):
+    def get_short_name(self, full_name):
         try:
             return full_name.split('"')[-1].split('-')[0]
         except AttributeError:

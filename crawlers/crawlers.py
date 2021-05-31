@@ -22,7 +22,6 @@ console.setFormatter(formatter)
 logging.getLogger().addHandler(console)
 
 
-
 class ClairsCrawler(Crawler):
     def __init__(self):
         super().__init__(site_to_check=
@@ -386,7 +385,7 @@ class FiveBelowCrawler(Crawler):
                                                                                               'center')
                     price_e = self.get_price('c01229')
                     price = price_e.text.split(':')[-1]
-                    price = price[1:]
+                    price = price[2:]
                     self.update_row(item.text, style, 'Yes', self.image_file, 'to_upload', 'Five Below', price)
                     self.change = True
                     print(f'{style} button is enabled')
@@ -396,7 +395,22 @@ class FiveBelowCrawler(Crawler):
                     self.change = True
                     print(f'{style} button is NOT enabled')
 
-    def get_short_name(self, full_name, style):
+    def update_row(self, series_name, style, in_stock, image_file, move_loc, site_name, price):
+        short_name = self.get_short_name(style)
+        size = self.get_size(series_name)
+        self.ws.cell(column=1, row=self.newRowLocation, value=series_name)
+        self.ws.cell(column=2, row=self.newRowLocation, value=short_name)
+        self.ws.cell(column=3, row=self.newRowLocation, value=price)
+        self.ws.cell(column=4, row=self.newRowLocation, value=size)
+        self.ws.cell(column=5, row=self.newRowLocation, value=style)
+        self.ws.cell(column=6, row=self.newRowLocation, value=in_stock)
+        self.ws.cell(column=7, row=self.newRowLocation, value=self.driver.current_url)
+        self.ws.cell(column=8, row=self.newRowLocation, value=image_file)
+        self.ws.cell(column=9, row=self.newRowLocation, value=site_name)
+        move_to_(self.newRowLocation, self.wb, self.wb2, move_loc)
+        self.newRowLocation += 1
+
+    def get_short_name(self, style):
         return style
 
     def get_size(self, full_name):

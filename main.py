@@ -13,30 +13,49 @@ if __name__ == "__main__":
         five_below_crawler = FiveBelowCrawler().run_crawler()
         checked_sites.append(five_below_crawler)
     except:
-        logging.exception('Five Below error!')
+        logging.exception('\n\nFive Below error!')
 
     try:
         paper_store = PaperStoreCrawler().run()
         checked_sites.append(paper_store)
     except:
-        logging.exception('Paper Store Error error!')
+        logging.exception('\n\nPaper Store Error error!')
 
     try:
         claires = ClairsCrawler().run()
         checked_sites.append(claires)
     except:
-        logging.exception('Claires Error error!')
-
+        logging.exception('\n\nClaires Error error!')
+    #
     try:
         costco = CostcoCrawler().run()
         checked_sites.append(costco)
     except:
-        logging.exception('Costco Error error!')
+        logging.exception('\n\nCostco Error error!')
 
-    # game_stop = GSCrawler().run()
-    # walmart = WalmartCrawler().run()
-    # walgreens = WalgreensCrawler().run()
-    # target = TargetCrawler().run()
+    try:
+        game_stop = GSCrawler().run()
+        checked_sites.append(game_stop)
+    except:
+        logging.exception('\n\nGame Stop Error!')
+
+    try:
+        walmart = WalmartCrawler().run()
+        checked_sites.append(walmart)
+    except:
+        logging.exception('\n\nWalmart Error!')
+
+    try:
+        walgreens = WalgreensCrawler().run()
+        checked_sites.append(walgreens)
+    except:
+        logging.exception('\n\nWalgreens Error!')
+
+    try:
+        target = TargetCrawler().run()
+        checked_sites.append(target)
+    except:
+        logging.exception('\n\nTarget Error!')
 
     if True in checked_sites:
         update_site_live()
