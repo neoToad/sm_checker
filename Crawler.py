@@ -12,6 +12,8 @@ import openpyxl
 from xl_helpx import move_to_
 from test_soup import download_image
 import time
+from pyvirtualdisplay import Display
+from selenium import webdriver
 
 import requests
 from bs4 import BeautifulSoup
@@ -22,11 +24,14 @@ class Crawler:
     def __init__(self, site_to_check, local_ss, listing_class_name):
         self.site_to_check = site_to_check
 
-        options = Options()
+        display = Display(visible=0, size=(800, 600))
+        display.start()
+        options = webdriver.ChromeOptions()
+        options.add_argument('--no-sandbox')
         ua = UserAgent()
         user_agent = ua.random
         options.add_argument(f'user-agent={user_agent}')
-        self.driver = webdriver.Chrome('./chromedriver.exe', chrome_options=options)
+        self.driver = webdriver.Chrome('root/checker/chromedriver.exe', chrome_options=options)
 
         self.wait = WebDriverWait(self.driver, 10)
         self.actions = ActionChains(self.driver)

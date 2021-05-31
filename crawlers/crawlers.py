@@ -3,11 +3,13 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 import re
 import selenium
-from sm_checker.Crawler import Crawler
-from sm_checker.test_soup import find_styles, get_image, download_image
-from sm_checker.xl_helpx import move_to_
+from Crawler import Crawler
+from test_soup import find_styles, get_image, download_image
+from xl_helpx import move_to_
 import time
 import logging
+from pyvirtualdisplay import Display
+from selenium import webdriver
 
 logging.basicConfig(filename="crawler_log.txt", level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
