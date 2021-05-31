@@ -62,8 +62,8 @@ if __name__ == "__main__":
             update_site_live()
             upload_images()
             delete_updated_items_ss()
-
+        print('waiting')
         time.sleep(3600)
-
+        print('running')
 
 

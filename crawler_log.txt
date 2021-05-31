@@ -1576,3 +1576,165 @@ Traceback (most recent call last):
   File "C:\Users\colin\anaconda3\envs\pyinstaller_demo\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 148, in _element_if_visible
     return element if element.is_displayed() == visibility else False
 AttributeError: 'NoneType' object has no attribute 'is_displayed'
+2021-05-31 16:43:46,808 - ERROR - Walmart error!
+Traceback (most recent call last):
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 300, in run
+    self.add_new_items('hover-zoom-hero-image', "Walmart", 'price-group')
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 57, in add_new_items
+    self.click_item(item, spreadsheet_items, class_name, site_name, price_name, price_found)
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 67, in click_item
+    to_click = WebDriverWait(self.driver, self.timeout).until(EC.element_to_be_clickable((By.PARTIAL_LINK_TEXT, item)))
+  File "C:\Users\colin\anaconda3\envs\pyinstaller_demo\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2021-05-31 16:44:32,484 - ERROR - 
+
+Target Error!
+Traceback (most recent call last):
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\main.py", line 56, in <module>
+    target = TargetCrawler().run()
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 222, in run
+    WebDriverWait(self.driver, self.timeout).until(EC.element_to_be_clickable((By.CLASS_NAME,
+  File "C:\Users\colin\anaconda3\envs\pyinstaller_demo\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2021-05-31 16:47:48,770 - ERROR - 
+
+Five Below error!
+Traceback (most recent call last):
+  File "C:/Users/colin/PycharmProjects/checker/sm_checker/main.py", line 14, in <module>
+    five_below_crawler = FiveBelowCrawler().run_crawler()
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 315, in __init__
+    super().__init__(site_to_check=
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 46, in __init__
+    self.driver.maximize_window()
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 737, in maximize_window
+    self.execute(command, params)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: unhandled inspector error: {"code":-32000,"message":"No target with given id"}
+  (Session info: chrome=90.0.4430.212)
+
+2021-05-31 16:49:55,229 - ERROR - Walmart error!
+Traceback (most recent call last):
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 300, in run
+    self.add_new_items('hover-zoom-hero-image', "Walmart", 'price-group')
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 57, in add_new_items
+    self.click_item(item, spreadsheet_items, class_name, site_name, price_name, price_found)
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 67, in click_item
+    to_click = WebDriverWait(self.driver, self.timeout).until(EC.element_to_be_clickable((By.PARTIAL_LINK_TEXT, item)))
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2021-05-31 16:50:36,392 - ERROR - 
+
+Target Error!
+Traceback (most recent call last):
+  File "C:/Users/colin/PycharmProjects/checker/sm_checker/main.py", line 56, in <module>
+    target = TargetCrawler().run()
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 222, in run
+    WebDriverWait(self.driver, self.timeout).until(EC.element_to_be_clickable((By.CLASS_NAME,
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\support\wait.py", line 71, in until
+    value = method(self._driver)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 297, in __call__
+    element = visibility_of_element_located(self.locator)(driver)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 128, in __call__
+    return _element_if_visible(_find_element(driver, self.locator))
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 415, in _find_element
+    raise e
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 411, in _find_element
+    return driver.find_element(*by)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=90.0.4430.212)
+
+2021-05-31 16:54:09,675 - ERROR - Walmart error!
+Traceback (most recent call last):
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 300, in run
+    self.add_new_items('hover-zoom-hero-image', "Walmart", 'price-group')
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 57, in add_new_items
+    self.click_item(item, spreadsheet_items, class_name, site_name, price_name, price_found)
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 67, in click_item
+    to_click = WebDriverWait(self.driver, self.timeout).until(EC.element_to_be_clickable((By.PARTIAL_LINK_TEXT, item)))
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2021-05-31 16:58:13,228 - ERROR - Walmart error!
+Traceback (most recent call last):
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 301, in run
+    self.click_next_page()
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 281, in click_next_page
+    if self.driver.find_element_by_class_name('paginator-btn-next'):
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 564, in find_element_by_class_name
+    return self.find_element(by=By.CLASS_NAME, value=name)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".paginator-btn-next"}
+  (Session info: chrome=90.0.4430.212)
+
+2021-05-31 16:58:43,755 - ERROR - 
+
+Target Error!
+Traceback (most recent call last):
+  File "C:/Users/colin/PycharmProjects/checker/sm_checker/main.py", line 56, in <module>
+    target = TargetCrawler().run()
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 222, in run
+    WebDriverWait(self.driver, self.timeout).until(EC.element_to_be_clickable((By.CLASS_NAME,
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2021-05-31 16:59:05,618 - ERROR - 
+
+Five Below error!
+Traceback (most recent call last):
+  File "C:/Users/colin/PycharmProjects/checker/sm_checker/main.py", line 14, in <module>
+    five_below_crawler = FiveBelowCrawler().run_crawler()
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 315, in __init__
+    super().__init__(site_to_check=
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 45, in __init__
+    self.driver.get(self.site_to_check)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=90.0.4430.212)
+
+2021-05-31 17:02:45,232 - ERROR - Walmart error!
+Traceback (most recent call last):
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 300, in run
+    self.add_new_items('hover-zoom-hero-image', "Walmart", 'price-group')
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 57, in add_new_items
+    self.click_item(item, spreadsheet_items, class_name, site_name, price_name, price_found)
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 69, in click_item
+    to_click.click()
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a class="skip-link font-semibold skip-header text-center visuallyhidden show-on-focus" href="#SearchContainer">...</a> is not clickable at point (11, 19). Other element would receive the click: <div class="modal-root" data-tl-id="modal" data-gtm-vis-recent-on-screen-9334583_33="244" data-gtm-vis-first-on-screen-9334583_33="244" data-gtm-vis-total-visible-time-9334583_33="100" data-gtm-vis-has-fired-9334583_33="1">...</div>
+  (Session info: chrome=90.0.4430.212)
+
