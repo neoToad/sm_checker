@@ -1465,3 +1465,2362 @@ Traceback (most recent call last):
 selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a class="skip-link font-semibold skip-header text-center visuallyhidden show-on-focus" href="#SearchContainer">...</a> is not clickable at point (11, 19). Other element would receive the click: <div class="modal-root" data-tl-id="modal" data-gtm-vis-recent-on-screen-9334583_33="278" data-gtm-vis-first-on-screen-9334583_33="279" data-gtm-vis-total-visible-time-9334583_33="100" data-gtm-vis-has-fired-9334583_33="1">...</div>
   (Session info: chrome=90.0.4430.212)
 
+2021-05-31 18:53:18,938 - ERROR - 
+
+Five Below error!
+Traceback (most recent call last):
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+PermissionError: [Errno 13] Permission denied: './chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 14, in <module>
+    five_below_crawler = FiveBelowCrawler().run_crawler()
+  File "/root/checker/crawlers/crawlers.py", line 315, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 29, in __init__
+    self.driver = webdriver.Chrome('./chromedriver.exe', chrome_options=options)
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 86, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 18:53:18,944 - ERROR - 
+
+Paper Store Error error!
+Traceback (most recent call last):
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+PermissionError: [Errno 13] Permission denied: './chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 20, in <module>
+    paper_store = PaperStoreCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 457, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 29, in __init__
+    self.driver = webdriver.Chrome('./chromedriver.exe', chrome_options=options)
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 86, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 18:53:18,947 - ERROR - 
+
+Claires Error error!
+Traceback (most recent call last):
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+PermissionError: [Errno 13] Permission denied: './chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 26, in <module>
+    claires = ClairsCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 27, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 29, in __init__
+    self.driver = webdriver.Chrome('./chromedriver.exe', chrome_options=options)
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 86, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 18:53:18,950 - ERROR - 
+
+Costco Error error!
+Traceback (most recent call last):
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+PermissionError: [Errno 13] Permission denied: './chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 32, in <module>
+    costco = CostcoCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 68, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 29, in __init__
+    self.driver = webdriver.Chrome('./chromedriver.exe', chrome_options=options)
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 86, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 18:53:18,952 - ERROR - 
+
+Game Stop Error!
+Traceback (most recent call last):
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+PermissionError: [Errno 13] Permission denied: './chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 38, in <module>
+    game_stop = GSCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 132, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 29, in __init__
+    self.driver = webdriver.Chrome('./chromedriver.exe', chrome_options=options)
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 86, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 18:53:18,955 - ERROR - 
+
+Walmart Error!
+Traceback (most recent call last):
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+PermissionError: [Errno 13] Permission denied: './chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 44, in <module>
+    walmart = WalmartCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 275, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 29, in __init__
+    self.driver = webdriver.Chrome('./chromedriver.exe', chrome_options=options)
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 86, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 18:53:18,958 - ERROR - 
+
+Walgreens Error!
+Traceback (most recent call last):
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+PermissionError: [Errno 13] Permission denied: './chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 50, in <module>
+    walgreens = WalgreensCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 247, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 29, in __init__
+    self.driver = webdriver.Chrome('./chromedriver.exe', chrome_options=options)
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 86, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 18:53:18,961 - ERROR - 
+
+Target Error!
+Traceback (most recent call last):
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+PermissionError: [Errno 13] Permission denied: './chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 56, in <module>
+    target = TargetCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 209, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 29, in __init__
+    self.driver = webdriver.Chrome('./chromedriver.exe', chrome_options=options)
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 86, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:11:32,827 - ERROR - 
+
+Five Below error!
+Traceback (most recent call last):
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+PermissionError: [Errno 13] Permission denied: './chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 14, in <module>
+    five_below_crawler = FiveBelowCrawler().run_crawler()
+  File "/root/checker/crawlers/crawlers.py", line 315, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 29, in __init__
+    self.driver = webdriver.Chrome('./chromedriver.exe', chrome_options=options)
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 86, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:11:32,832 - ERROR - 
+
+Paper Store Error error!
+Traceback (most recent call last):
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+PermissionError: [Errno 13] Permission denied: './chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 20, in <module>
+    paper_store = PaperStoreCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 457, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 29, in __init__
+    self.driver = webdriver.Chrome('./chromedriver.exe', chrome_options=options)
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 86, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:11:32,835 - ERROR - 
+
+Claires Error error!
+Traceback (most recent call last):
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+PermissionError: [Errno 13] Permission denied: './chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 26, in <module>
+    claires = ClairsCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 27, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 29, in __init__
+    self.driver = webdriver.Chrome('./chromedriver.exe', chrome_options=options)
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 86, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:11:32,838 - ERROR - 
+
+Costco Error error!
+Traceback (most recent call last):
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+PermissionError: [Errno 13] Permission denied: './chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 32, in <module>
+    costco = CostcoCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 68, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 29, in __init__
+    self.driver = webdriver.Chrome('./chromedriver.exe', chrome_options=options)
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 86, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:11:32,841 - ERROR - 
+
+Game Stop Error!
+Traceback (most recent call last):
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+PermissionError: [Errno 13] Permission denied: './chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 38, in <module>
+    game_stop = GSCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 132, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 29, in __init__
+    self.driver = webdriver.Chrome('./chromedriver.exe', chrome_options=options)
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 86, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:11:32,844 - ERROR - 
+
+Walmart Error!
+Traceback (most recent call last):
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+PermissionError: [Errno 13] Permission denied: './chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 44, in <module>
+    walmart = WalmartCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 275, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 29, in __init__
+    self.driver = webdriver.Chrome('./chromedriver.exe', chrome_options=options)
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 86, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:11:32,846 - ERROR - 
+
+Walgreens Error!
+Traceback (most recent call last):
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+PermissionError: [Errno 13] Permission denied: './chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 50, in <module>
+    walgreens = WalgreensCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 247, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 29, in __init__
+    self.driver = webdriver.Chrome('./chromedriver.exe', chrome_options=options)
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 86, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:11:32,849 - ERROR - 
+
+Target Error!
+Traceback (most recent call last):
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+PermissionError: [Errno 13] Permission denied: './chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 56, in <module>
+    target = TargetCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 209, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 29, in __init__
+    self.driver = webdriver.Chrome('./chromedriver.exe', chrome_options=options)
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 86, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:27:52,806 - ERROR - 
+
+Five Below error!
+Traceback (most recent call last):
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker/chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 14, in <module>
+    five_below_crawler = FiveBelowCrawler().run_crawler()
+  File "/root/checker/crawlers/crawlers.py", line 317, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 33, in __init__
+    self.driver = webdriver.Chrome('root/checker/chromedriver.exe', chrome_options=options)
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:27:52,968 - ERROR - 
+
+Paper Store Error error!
+Traceback (most recent call last):
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker/chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 20, in <module>
+    paper_store = PaperStoreCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 459, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 33, in __init__
+    self.driver = webdriver.Chrome('root/checker/chromedriver.exe', chrome_options=options)
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:27:53,106 - ERROR - 
+
+Claires Error error!
+Traceback (most recent call last):
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker/chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 26, in <module>
+    claires = ClairsCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 29, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 33, in __init__
+    self.driver = webdriver.Chrome('root/checker/chromedriver.exe', chrome_options=options)
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:27:53,297 - ERROR - 
+
+Costco Error error!
+Traceback (most recent call last):
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker/chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 32, in <module>
+    costco = CostcoCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 70, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 33, in __init__
+    self.driver = webdriver.Chrome('root/checker/chromedriver.exe', chrome_options=options)
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:27:53,581 - ERROR - 
+
+Game Stop Error!
+Traceback (most recent call last):
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker/chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 38, in <module>
+    game_stop = GSCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 134, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 33, in __init__
+    self.driver = webdriver.Chrome('root/checker/chromedriver.exe', chrome_options=options)
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:27:53,909 - ERROR - 
+
+Walmart Error!
+Traceback (most recent call last):
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker/chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 44, in <module>
+    walmart = WalmartCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 277, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 33, in __init__
+    self.driver = webdriver.Chrome('root/checker/chromedriver.exe', chrome_options=options)
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:28:29,311 - ERROR - 
+
+Five Below error!
+Traceback (most recent call last):
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker/chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 14, in <module>
+    five_below_crawler = FiveBelowCrawler().run_crawler()
+  File "/root/checker/crawlers/crawlers.py", line 317, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 33, in __init__
+    self.driver = webdriver.Chrome('root/checker/chromedriver.exe', chrome_options=options)
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/.local/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:42:23,175 - ERROR - 
+
+Five Below error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker/chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 14, in <module>
+    five_below_crawler = FiveBelowCrawler().run_crawler()
+  File "/root/checker/crawlers/crawlers.py", line 317, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 33, in __init__
+    self.driver = webdriver.Chrome('root/checker/chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:42:23,247 - ERROR - 
+
+Paper Store Error error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker/chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 20, in <module>
+    paper_store = PaperStoreCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 459, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 33, in __init__
+    self.driver = webdriver.Chrome('root/checker/chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:42:23,309 - ERROR - 
+
+Claires Error error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker/chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 26, in <module>
+    claires = ClairsCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 29, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 33, in __init__
+    self.driver = webdriver.Chrome('root/checker/chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:42:23,371 - ERROR - 
+
+Costco Error error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker/chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 32, in <module>
+    costco = CostcoCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 70, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 33, in __init__
+    self.driver = webdriver.Chrome('root/checker/chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:42:23,432 - ERROR - 
+
+Game Stop Error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker/chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 38, in <module>
+    game_stop = GSCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 134, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 33, in __init__
+    self.driver = webdriver.Chrome('root/checker/chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:42:23,494 - ERROR - 
+
+Walmart Error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker/chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 44, in <module>
+    walmart = WalmartCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 277, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 33, in __init__
+    self.driver = webdriver.Chrome('root/checker/chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:42:23,555 - ERROR - 
+
+Walgreens Error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker/chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 50, in <module>
+    walgreens = WalgreensCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 249, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 33, in __init__
+    self.driver = webdriver.Chrome('root/checker/chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:42:23,618 - ERROR - 
+
+Target Error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker/chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 56, in <module>
+    target = TargetCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 211, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 33, in __init__
+    self.driver = webdriver.Chrome('root/checker/chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:44:09,749 - ERROR - 
+
+Five Below error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 14, in <module>
+    five_below_crawler = FiveBelowCrawler().run_crawler()
+  File "/root/checker/crawlers/crawlers.py", line 317, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:44:09,805 - ERROR - 
+
+Paper Store Error error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 20, in <module>
+    paper_store = PaperStoreCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 459, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:44:09,860 - ERROR - 
+
+Claires Error error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 26, in <module>
+    claires = ClairsCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 29, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:44:09,915 - ERROR - 
+
+Costco Error error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 32, in <module>
+    costco = CostcoCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 70, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:44:09,970 - ERROR - 
+
+Game Stop Error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 38, in <module>
+    game_stop = GSCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 134, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:44:10,026 - ERROR - 
+
+Walmart Error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 44, in <module>
+    walmart = WalmartCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 277, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:44:10,080 - ERROR - 
+
+Walgreens Error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 50, in <module>
+    walgreens = WalgreensCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 249, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:44:10,135 - ERROR - 
+
+Target Error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 56, in <module>
+    target = TargetCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 211, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:48:24,187 - ERROR - 
+
+Five Below error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 14, in <module>
+    five_below_crawler = FiveBelowCrawler().run_crawler()
+  File "/root/checker/crawlers/crawlers.py", line 317, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:48:24,248 - ERROR - 
+
+Paper Store Error error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 20, in <module>
+    paper_store = PaperStoreCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 459, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:48:24,304 - ERROR - 
+
+Claires Error error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 26, in <module>
+    claires = ClairsCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 29, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:48:24,364 - ERROR - 
+
+Costco Error error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 32, in <module>
+    costco = CostcoCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 70, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:48:24,423 - ERROR - 
+
+Game Stop Error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 38, in <module>
+    game_stop = GSCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 134, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:48:24,484 - ERROR - 
+
+Walmart Error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 44, in <module>
+    walmart = WalmartCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 277, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:48:24,548 - ERROR - 
+
+Walgreens Error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 50, in <module>
+    walgreens = WalgreensCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 249, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:48:24,609 - ERROR - 
+
+Target Error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 56, in <module>
+    target = TargetCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 211, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:49:03,377 - ERROR - 
+
+Five Below error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'checker/chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 14, in <module>
+    five_below_crawler = FiveBelowCrawler().run_crawler()
+  File "/root/checker/crawlers/crawlers.py", line 317, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('checker/chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:49:03,431 - ERROR - 
+
+Paper Store Error error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'checker/chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 20, in <module>
+    paper_store = PaperStoreCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 459, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('checker/chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:49:03,486 - ERROR - 
+
+Claires Error error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'checker/chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 26, in <module>
+    claires = ClairsCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 29, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('checker/chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:49:03,539 - ERROR - 
+
+Costco Error error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'checker/chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 32, in <module>
+    costco = CostcoCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 70, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('checker/chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:49:03,591 - ERROR - 
+
+Game Stop Error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'checker/chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 38, in <module>
+    game_stop = GSCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 134, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('checker/chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:49:03,646 - ERROR - 
+
+Walmart Error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'checker/chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 44, in <module>
+    walmart = WalmartCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 277, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('checker/chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:49:03,701 - ERROR - 
+
+Walgreens Error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'checker/chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 50, in <module>
+    walgreens = WalgreensCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 249, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('checker/chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:49:03,756 - ERROR - 
+
+Target Error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'checker/chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 56, in <module>
+    target = TargetCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 211, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('checker/chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:50:28,626 - ERROR - 
+
+Five Below error!
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 14, in <module>
+    five_below_crawler = FiveBelowCrawler().run_crawler()
+  File "/root/checker/crawlers/crawlers.py", line 317, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('/checker/chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+NotADirectoryError: [Errno 20] Not a directory: '/checker/chromedriver.exe'
+2021-05-31 19:50:28,680 - ERROR - 
+
+Paper Store Error error!
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 20, in <module>
+    paper_store = PaperStoreCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 459, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('/checker/chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+NotADirectoryError: [Errno 20] Not a directory: '/checker/chromedriver.exe'
+2021-05-31 19:50:28,734 - ERROR - 
+
+Claires Error error!
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 26, in <module>
+    claires = ClairsCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 29, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('/checker/chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+NotADirectoryError: [Errno 20] Not a directory: '/checker/chromedriver.exe'
+2021-05-31 19:50:28,787 - ERROR - 
+
+Costco Error error!
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 32, in <module>
+    costco = CostcoCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 70, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('/checker/chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+NotADirectoryError: [Errno 20] Not a directory: '/checker/chromedriver.exe'
+2021-05-31 19:50:28,842 - ERROR - 
+
+Game Stop Error!
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 38, in <module>
+    game_stop = GSCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 134, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('/checker/chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+NotADirectoryError: [Errno 20] Not a directory: '/checker/chromedriver.exe'
+2021-05-31 19:50:28,895 - ERROR - 
+
+Walmart Error!
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 44, in <module>
+    walmart = WalmartCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 277, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('/checker/chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+NotADirectoryError: [Errno 20] Not a directory: '/checker/chromedriver.exe'
+2021-05-31 19:50:28,950 - ERROR - 
+
+Walgreens Error!
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 50, in <module>
+    walgreens = WalgreensCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 249, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('/checker/chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+NotADirectoryError: [Errno 20] Not a directory: '/checker/chromedriver.exe'
+2021-05-31 19:50:29,003 - ERROR - 
+
+Target Error!
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 56, in <module>
+    target = TargetCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 211, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('/checker/chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+NotADirectoryError: [Errno 20] Not a directory: '/checker/chromedriver.exe'
+2021-05-31 19:50:59,932 - ERROR - 
+
+Five Below error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker/chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 14, in <module>
+    five_below_crawler = FiveBelowCrawler().run_crawler()
+  File "/root/checker/crawlers/crawlers.py", line 317, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('root/checker/chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:50:59,983 - ERROR - 
+
+Paper Store Error error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker/chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 20, in <module>
+    paper_store = PaperStoreCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 459, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('root/checker/chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:51:00,033 - ERROR - 
+
+Claires Error error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker/chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 26, in <module>
+    claires = ClairsCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 29, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('root/checker/chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:51:00,083 - ERROR - 
+
+Costco Error error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker/chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 32, in <module>
+    costco = CostcoCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 70, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('root/checker/chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:51:00,133 - ERROR - 
+
+Game Stop Error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker/chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 38, in <module>
+    game_stop = GSCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 134, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('root/checker/chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:51:00,183 - ERROR - 
+
+Walmart Error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker/chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 44, in <module>
+    walmart = WalmartCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 277, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('root/checker/chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:51:00,233 - ERROR - 
+
+Walgreens Error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker/chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 50, in <module>
+    walgreens = WalgreensCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 249, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('root/checker/chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:51:00,284 - ERROR - 
+
+Target Error!
+Traceback (most recent call last):
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "/usr/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker/chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 56, in <module>
+    target = TargetCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 211, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('root/checker/chromedriver.exe', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+2021-05-31 19:59:57,469 - ERROR - 
+
+Five Below error!
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 14, in <module>
+    five_below_crawler = FiveBelowCrawler().run_crawler()
+  File "/root/checker/crawlers/crawlers.py", line 317, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 46, in __init__
+    self.wb = openpyxl.load_workbook(self.spread_filepath)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/openpyxl/reader/excel.py", line 315, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+  File "/root/checker/checker_env/lib/python3.9/site-packages/openpyxl/reader/excel.py", line 124, in __init__
+    self.archive = _validate_archive(fn)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/openpyxl/reader/excel.py", line 96, in _validate_archive
+    archive = ZipFile(filename, 'r')
+  File "/usr/lib/python3.9/zipfile.py", line 1239, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker/items_data/fb_sm.xlsx'
+2021-05-31 20:00:01,027 - ERROR - 
+
+Paper Store Error error!
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 20, in <module>
+    paper_store = PaperStoreCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 459, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 46, in __init__
+    self.wb = openpyxl.load_workbook(self.spread_filepath)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/openpyxl/reader/excel.py", line 315, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+  File "/root/checker/checker_env/lib/python3.9/site-packages/openpyxl/reader/excel.py", line 124, in __init__
+    self.archive = _validate_archive(fn)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/openpyxl/reader/excel.py", line 96, in _validate_archive
+    archive = ZipFile(filename, 'r')
+  File "/usr/lib/python3.9/zipfile.py", line 1239, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker/items_data/paper_store.xlsx'
+2021-05-31 20:00:04,453 - ERROR - 
+
+Claires Error error!
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 26, in <module>
+    claires = ClairsCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 29, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 46, in __init__
+    self.wb = openpyxl.load_workbook(self.spread_filepath)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/openpyxl/reader/excel.py", line 315, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+  File "/root/checker/checker_env/lib/python3.9/site-packages/openpyxl/reader/excel.py", line 124, in __init__
+    self.archive = _validate_archive(fn)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/openpyxl/reader/excel.py", line 96, in _validate_archive
+    archive = ZipFile(filename, 'r')
+  File "/usr/lib/python3.9/zipfile.py", line 1239, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker/items_data/claires.xlsx'
+2021-05-31 20:00:10,902 - ERROR - 
+
+Costco Error error!
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 32, in <module>
+    costco = CostcoCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 70, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 46, in __init__
+    self.wb = openpyxl.load_workbook(self.spread_filepath)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/openpyxl/reader/excel.py", line 315, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+  File "/root/checker/checker_env/lib/python3.9/site-packages/openpyxl/reader/excel.py", line 124, in __init__
+    self.archive = _validate_archive(fn)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/openpyxl/reader/excel.py", line 96, in _validate_archive
+    archive = ZipFile(filename, 'r')
+  File "/usr/lib/python3.9/zipfile.py", line 1239, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker/items_data/costco.xlsx'
+2021-05-31 20:00:18,096 - ERROR - 
+
+Game Stop Error!
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 38, in <module>
+    game_stop = GSCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 134, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 46, in __init__
+    self.wb = openpyxl.load_workbook(self.spread_filepath)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/openpyxl/reader/excel.py", line 315, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+  File "/root/checker/checker_env/lib/python3.9/site-packages/openpyxl/reader/excel.py", line 124, in __init__
+    self.archive = _validate_archive(fn)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/openpyxl/reader/excel.py", line 96, in _validate_archive
+    archive = ZipFile(filename, 'r')
+  File "/usr/lib/python3.9/zipfile.py", line 1239, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker/items_data/gamestop.xlsx'
+2021-05-31 20:00:20,730 - ERROR - 
+
+Walmart Error!
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 44, in <module>
+    walmart = WalmartCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 277, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('/usr/bin/chromedriver', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/common/service.py", line 102, in start
+    time.sleep(1)
+KeyboardInterrupt
+2021-05-31 20:04:31,048 - ERROR - 
+
+Five Below error!
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 14, in <module>
+    five_below_crawler = FiveBelowCrawler().run_crawler()
+  File "/root/checker/crawlers/crawlers.py", line 317, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 46, in __init__
+    self.wb = openpyxl.load_workbook(self.spread_filepath)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/openpyxl/reader/excel.py", line 315, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+  File "/root/checker/checker_env/lib/python3.9/site-packages/openpyxl/reader/excel.py", line 124, in __init__
+    self.archive = _validate_archive(fn)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/openpyxl/reader/excel.py", line 96, in _validate_archive
+    archive = ZipFile(filename, 'r')
+  File "/usr/lib/python3.9/zipfile.py", line 1239, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker/items_data/fb_sm.xlsx'
+2021-05-31 20:04:34,010 - ERROR - 
+
+Paper Store Error error!
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 20, in <module>
+    paper_store = PaperStoreCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 459, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 46, in __init__
+    self.wb = openpyxl.load_workbook(self.spread_filepath)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/openpyxl/reader/excel.py", line 315, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+  File "/root/checker/checker_env/lib/python3.9/site-packages/openpyxl/reader/excel.py", line 124, in __init__
+    self.archive = _validate_archive(fn)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/openpyxl/reader/excel.py", line 96, in _validate_archive
+    archive = ZipFile(filename, 'r')
+  File "/usr/lib/python3.9/zipfile.py", line 1239, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker/items_data/paper_store.xlsx'
+2021-05-31 20:04:36,259 - ERROR - 
+
+Claires Error error!
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 26, in <module>
+    claires = ClairsCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 29, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 46, in __init__
+    self.wb = openpyxl.load_workbook(self.spread_filepath)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/openpyxl/reader/excel.py", line 315, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+  File "/root/checker/checker_env/lib/python3.9/site-packages/openpyxl/reader/excel.py", line 124, in __init__
+    self.archive = _validate_archive(fn)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/openpyxl/reader/excel.py", line 96, in _validate_archive
+    archive = ZipFile(filename, 'r')
+  File "/usr/lib/python3.9/zipfile.py", line 1239, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker/items_data/claires.xlsx'
+2021-05-31 20:04:43,842 - ERROR - 
+
+Costco Error error!
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 32, in <module>
+    costco = CostcoCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 70, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 46, in __init__
+    self.wb = openpyxl.load_workbook(self.spread_filepath)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/openpyxl/reader/excel.py", line 315, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+  File "/root/checker/checker_env/lib/python3.9/site-packages/openpyxl/reader/excel.py", line 124, in __init__
+    self.archive = _validate_archive(fn)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/openpyxl/reader/excel.py", line 96, in _validate_archive
+    archive = ZipFile(filename, 'r')
+  File "/usr/lib/python3.9/zipfile.py", line 1239, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker/items_data/costco.xlsx'
+2021-05-31 20:04:51,188 - ERROR - 
+
+Game Stop Error!
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 38, in <module>
+    game_stop = GSCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 134, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 46, in __init__
+    self.wb = openpyxl.load_workbook(self.spread_filepath)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/openpyxl/reader/excel.py", line 315, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+  File "/root/checker/checker_env/lib/python3.9/site-packages/openpyxl/reader/excel.py", line 124, in __init__
+    self.archive = _validate_archive(fn)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/openpyxl/reader/excel.py", line 96, in _validate_archive
+    archive = ZipFile(filename, 'r')
+  File "/usr/lib/python3.9/zipfile.py", line 1239, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker/items_data/gamestop.xlsx'
+2021-05-31 20:04:55,317 - ERROR - 
+
+Walmart Error!
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 44, in <module>
+    walmart = WalmartCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 277, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 46, in __init__
+    self.wb = openpyxl.load_workbook(self.spread_filepath)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/openpyxl/reader/excel.py", line 315, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+  File "/root/checker/checker_env/lib/python3.9/site-packages/openpyxl/reader/excel.py", line 124, in __init__
+    self.archive = _validate_archive(fn)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/openpyxl/reader/excel.py", line 96, in _validate_archive
+    archive = ZipFile(filename, 'r')
+  File "/usr/lib/python3.9/zipfile.py", line 1239, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker/items_data/walmart.xlsx'
+2021-05-31 20:05:04,978 - ERROR - 
+
+Walgreens Error!
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 50, in <module>
+    walgreens = WalgreensCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 249, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('/usr/bin/chromedriver', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 76, in __init__
+    RemoteWebDriver.__init__(
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/root/checker/checker_env/lib/python3.9/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/root/checker/checker_env/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/root/checker/checker_env/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1345, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+2021-05-31 20:07:09,645 - ERROR - 
+
+Five Below error!
+Traceback (most recent call last):
+  File "/root/checker/crawlers/crawlers.py", line 436, in run_crawler
+    self.goto_stuffed_a()
+  File "/root/checker/crawlers/crawlers.py", line 323, in goto_stuffed_a
+    toys_menu = self.driver.find_element_by_link_text("toys & games")
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 428, in find_element_by_link_text
+    return self.find_element(by=By.LINK_TEXT, value=link_text)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"link text","selector":"toys & games"}
+  (Session info: chrome=91.0.4472.77)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 14, in <module>
+    five_below_crawler = FiveBelowCrawler().run_crawler()
+  File "/root/checker/crawlers/crawlers.py", line 439, in run_crawler
+    self.goto_stuffed_a()
+  File "/root/checker/crawlers/crawlers.py", line 325, in goto_stuffed_a
+    self.wait.until(EC.visibility_of_element_located((By.LINK_TEXT, "stuffed animals"))).click()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/support/wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2021-05-31 20:07:22,126 - ERROR - 
+
+Paper Store Error error!
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 20, in <module>
+    paper_store = PaperStoreCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 482, in run
+    self.add_new_items("product-images--image-wrap", 'The Paper Store', "product-information--purchase_price", 'data-base-price')
+  File "/root/checker/Crawler.py", line 62, in add_new_items
+    self.click_item(item, spreadsheet_items, class_name, site_name, price_name, price_found)
+  File "/root/checker/Crawler.py", line 75, in click_item
+    self.find_image_and_price(item, class_name, site_name, price_name, price_found)
+  File "/root/checker/Crawler.py", line 83, in find_image_and_price
+    image_name = download_image(image.get_attribute("src"))
+  File "/root/checker/test_soup.py", line 52, in download_image
+    with open(complete_filename, 'wb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:/Users/colin/PycharmProjects/squish_site/media/images/004692_1000577163_NoColor.jpg.jpg'
+2021-05-31 20:08:56,298 - ERROR - 
+
+Claires Error error!
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 26, in <module>
+    claires = ClairsCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 29, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('/usr/bin/chromedriver', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 76, in __init__
+    RemoteWebDriver.__init__(
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+
+2021-05-31 20:09:40,540 - ERROR - 
+
+Game Stop Error!
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 38, in <module>
+    game_stop = GSCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 190, in run
+    items_area = self.driver.find_element_by_class_name('product-tiles-row')
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 564, in find_element_by_class_name
+    return self.find_element(by=By.CLASS_NAME, value=name)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".product-tiles-row"}
+  (Session info: chrome=91.0.4472.77)
+
+2021-05-31 20:09:57,670 - ERROR - Walmart error!
+Traceback (most recent call last):
+  File "/root/checker/crawlers/crawlers.py", line 302, in run
+    self.add_new_items('hover-zoom-hero-image', "Walmart", 'price-group')
+  File "/root/checker/Crawler.py", line 62, in add_new_items
+    self.click_item(item, spreadsheet_items, class_name, site_name, price_name, price_found)
+  File "/root/checker/Crawler.py", line 74, in click_item
+    to_click.click()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/remote/webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a class="skip-link font-semibold skip-header text-center visuallyhidden show-on-focus" href="#SearchContainer">...</a> is not clickable at point (11, 19). Other element would receive the click: <div class="modal-root" data-tl-id="modal" data-gtm-vis-recent-on-screen-9334583_33="484" data-gtm-vis-first-on-screen-9334583_33="484" data-gtm-vis-total-visible-time-9334583_33="100" data-gtm-vis-has-fired-9334583_33="1">...</div>
+  (Session info: chrome=91.0.4472.77)
+
+2021-05-31 20:10:45,254 - ERROR - 
+
+Target Error!
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 56, in <module>
+    target = TargetCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 224, in run
+    WebDriverWait(self.driver, self.timeout).until(EC.element_to_be_clickable((By.CLASS_NAME,
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/support/wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2021-05-31 20:13:41,514 - ERROR - 
+
+Five Below error!
+Traceback (most recent call last):
+  File "/root/checker/crawlers/crawlers.py", line 436, in run_crawler
+    self.goto_stuffed_a()
+  File "/root/checker/crawlers/crawlers.py", line 323, in goto_stuffed_a
+    toys_menu = self.driver.find_element_by_link_text("toys & games")
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 428, in find_element_by_link_text
+    return self.find_element(by=By.LINK_TEXT, value=link_text)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"link text","selector":"toys & games"}
+  (Session info: chrome=91.0.4472.77)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 14, in <module>
+    five_below_crawler = FiveBelowCrawler().run_crawler()
+  File "/root/checker/crawlers/crawlers.py", line 439, in run_crawler
+    self.goto_stuffed_a()
+  File "/root/checker/crawlers/crawlers.py", line 325, in goto_stuffed_a
+    self.wait.until(EC.visibility_of_element_located((By.LINK_TEXT, "stuffed animals"))).click()
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/support/wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2021-05-31 20:13:56,211 - ERROR - 
+
+Paper Store Error error!
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 20, in <module>
+    paper_store = PaperStoreCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 482, in run
+    self.add_new_items("product-images--image-wrap", 'The Paper Store', "product-information--purchase_price", 'data-base-price')
+  File "/root/checker/Crawler.py", line 62, in add_new_items
+    self.click_item(item, spreadsheet_items, class_name, site_name, price_name, price_found)
+  File "/root/checker/Crawler.py", line 75, in click_item
+    self.find_image_and_price(item, class_name, site_name, price_name, price_found)
+  File "/root/checker/Crawler.py", line 83, in find_image_and_price
+    image_name = download_image(image.get_attribute("src"))
+  File "/root/checker/test_soup.py", line 52, in download_image
+    with open(complete_filename, 'wb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/root/checker/media/images/004692_1000577163_NoColor.jpg.jpg'
+2021-05-31 20:15:26,447 - ERROR - 
+
+Claires Error error!
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 26, in <module>
+    claires = ClairsCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 29, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('/usr/bin/chromedriver', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 76, in __init__
+    RemoteWebDriver.__init__(
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+
+2021-05-31 20:16:42,329 - ERROR - 
+
+Costco Error error!
+Traceback (most recent call last):
+  File "/root/checker/main.py", line 32, in <module>
+    costco = CostcoCrawler().run()
+  File "/root/checker/crawlers/crawlers.py", line 70, in __init__
+    super().__init__(site_to_check=
+  File "/root/checker/Crawler.py", line 34, in __init__
+    self.driver = webdriver.Chrome('/usr/bin/chromedriver', chrome_options=options)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/chrome/webdriver.py", line 76, in __init__
+    RemoteWebDriver.__init__(
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/root/checker/checker_env/lib/python3.9/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/root/checker/checker_env/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/root/checker/checker_env/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/root/checker/checker_env/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1345, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt

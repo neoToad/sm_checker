@@ -42,7 +42,7 @@ def download_image(image_url, first_sep='/', sec_sep='?', rd=False):
     else:
         local_filename = image_url.split(first_sep)[-1].split(sec_sep)[0] + '.jpg'
 
-    complete_filename = os.path.join('C:/Users/colin/PycharmProjects/', 'squish_site/media/images', local_filename)
+    complete_filename = os.path.join('/root/checker', 'media/images', local_filename)
 
     session = requests.Session()
     session.headers.update({'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'})

@@ -24,14 +24,14 @@ class Crawler:
     def __init__(self, site_to_check, local_ss, listing_class_name):
         self.site_to_check = site_to_check
 
-        display = Display(visible=0, size=(800, 600))
+        display = Display(visible=0, size=(1200, 800))
         display.start()
         options = webdriver.ChromeOptions()
         options.add_argument('--no-sandbox')
         ua = UserAgent()
         user_agent = ua.random
         options.add_argument(f'user-agent={user_agent}')
-        self.driver = webdriver.Chrome('root/checker/chromedriver.exe', chrome_options=options)
+        self.driver = webdriver.Chrome('/usr/bin/chromedriver', chrome_options=options)
 
         self.wait = WebDriverWait(self.driver, 10)
         self.actions = ActionChains(self.driver)
@@ -41,8 +41,8 @@ class Crawler:
 
         self.change = False
 
-        self.spread_filepath = os.path.join('root/checker', 'items_data', local_ss)
-        self.update_ss = os.path.join('root/checker', 'items_data', 'master_upload.xlsx')
+        self.spread_filepath = os.path.join('/root/checker', 'items_data', local_ss)
+        self.update_ss = os.path.join('/root/checker', 'items_data', 'master_upload.xlsx')
         self.wb = openpyxl.load_workbook(self.spread_filepath)
         self.ws = self.wb['master']
         self.wb2 = openpyxl.load_workbook(self.update_ss)
