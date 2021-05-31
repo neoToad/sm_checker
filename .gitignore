@@ -2,3 +2,4 @@ items_data/
 __pycache__/
 .env
 crawler_log.txt
+crawler_log.txt
