@@ -36,8 +36,8 @@ class Crawler:
 
         self.change = False
 
-        self.spread_filepath = os.path.join('root/checker', 'items_data', local_ss)
-        self.update_ss = os.path.join('root/checker', 'items_data', 'master_upload.xlsx')
+        self.spread_filepath = os.path.join('C:/Users/colin/PycharmProjects/checker/sm_checker', 'items_data', local_ss)
+        self.update_ss = os.path.join('C:/Users/colin/PycharmProjects/checker/sm_checker', 'items_data', 'master_upload.xlsx')
         self.wb = openpyxl.load_workbook(self.spread_filepath)
         self.ws = self.wb['master']
         self.wb2 = openpyxl.load_workbook(self.update_ss)

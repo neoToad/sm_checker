@@ -1465,3 +1465,114 @@ Traceback (most recent call last):
 selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a class="skip-link font-semibold skip-header text-center visuallyhidden show-on-focus" href="#SearchContainer">...</a> is not clickable at point (11, 19). Other element would receive the click: <div class="modal-root" data-tl-id="modal" data-gtm-vis-recent-on-screen-9334583_33="278" data-gtm-vis-first-on-screen-9334583_33="279" data-gtm-vis-total-visible-time-9334583_33="100" data-gtm-vis-has-fired-9334583_33="1">...</div>
   (Session info: chrome=90.0.4430.212)
 
+2021-05-31 16:34:24,274 - ERROR - 
+
+Five Below error!
+Traceback (most recent call last):
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\main.py", line 14, in <module>
+    five_below_crawler = FiveBelowCrawler().run_crawler()
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 315, in __init__
+    super().__init__(site_to_check=
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 41, in __init__
+    self.wb = openpyxl.load_workbook(self.spread_filepath)
+  File "C:\Users\colin\anaconda3\envs\pyinstaller_demo\lib\site-packages\openpyxl\reader\excel.py", line 315, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+  File "C:\Users\colin\anaconda3\envs\pyinstaller_demo\lib\site-packages\openpyxl\reader\excel.py", line 124, in __init__
+    self.archive = _validate_archive(fn)
+  File "C:\Users\colin\anaconda3\envs\pyinstaller_demo\lib\site-packages\openpyxl\reader\excel.py", line 96, in _validate_archive
+    archive = ZipFile(filename, 'r')
+  File "C:\Users\colin\anaconda3\envs\pyinstaller_demo\lib\zipfile.py", line 1239, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker\\items_data\\fb_sm.xlsx'
+2021-05-31 16:34:27,658 - ERROR - 
+
+Paper Store Error error!
+Traceback (most recent call last):
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\main.py", line 20, in <module>
+    paper_store = PaperStoreCrawler().run()
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 457, in __init__
+    super().__init__(site_to_check=
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 41, in __init__
+    self.wb = openpyxl.load_workbook(self.spread_filepath)
+  File "C:\Users\colin\anaconda3\envs\pyinstaller_demo\lib\site-packages\openpyxl\reader\excel.py", line 315, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+  File "C:\Users\colin\anaconda3\envs\pyinstaller_demo\lib\site-packages\openpyxl\reader\excel.py", line 124, in __init__
+    self.archive = _validate_archive(fn)
+  File "C:\Users\colin\anaconda3\envs\pyinstaller_demo\lib\site-packages\openpyxl\reader\excel.py", line 96, in _validate_archive
+    archive = ZipFile(filename, 'r')
+  File "C:\Users\colin\anaconda3\envs\pyinstaller_demo\lib\zipfile.py", line 1239, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker\\items_data\\paper_store.xlsx'
+2021-05-31 16:35:52,159 - ERROR - 
+
+Five Below error!
+Traceback (most recent call last):
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\main.py", line 14, in <module>
+    five_below_crawler = FiveBelowCrawler().run_crawler()
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 315, in __init__
+    super().__init__(site_to_check=
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 43, in __init__
+    self.wb2 = openpyxl.load_workbook(self.update_ss)
+  File "C:\Users\colin\anaconda3\envs\pyinstaller_demo\lib\site-packages\openpyxl\reader\excel.py", line 315, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+  File "C:\Users\colin\anaconda3\envs\pyinstaller_demo\lib\site-packages\openpyxl\reader\excel.py", line 124, in __init__
+    self.archive = _validate_archive(fn)
+  File "C:\Users\colin\anaconda3\envs\pyinstaller_demo\lib\site-packages\openpyxl\reader\excel.py", line 96, in _validate_archive
+    archive = ZipFile(filename, 'r')
+  File "C:\Users\colin\anaconda3\envs\pyinstaller_demo\lib\zipfile.py", line 1239, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker\\items_data\\master_upload.xlsx'
+2021-05-31 16:35:53,350 - ERROR - 
+
+Paper Store Error error!
+Traceback (most recent call last):
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\main.py", line 20, in <module>
+    paper_store = PaperStoreCrawler().run()
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 457, in __init__
+    super().__init__(site_to_check=
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 43, in __init__
+    self.wb2 = openpyxl.load_workbook(self.update_ss)
+  File "C:\Users\colin\anaconda3\envs\pyinstaller_demo\lib\site-packages\openpyxl\reader\excel.py", line 315, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+  File "C:\Users\colin\anaconda3\envs\pyinstaller_demo\lib\site-packages\openpyxl\reader\excel.py", line 124, in __init__
+    self.archive = _validate_archive(fn)
+  File "C:\Users\colin\anaconda3\envs\pyinstaller_demo\lib\site-packages\openpyxl\reader\excel.py", line 96, in _validate_archive
+    archive = ZipFile(filename, 'r')
+  File "C:\Users\colin\anaconda3\envs\pyinstaller_demo\lib\zipfile.py", line 1239, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: 'root/checker\\items_data\\master_upload.xlsx'
+2021-05-31 16:36:31,430 - ERROR - 
+
+Five Below error!
+Traceback (most recent call last):
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\main.py", line 14, in <module>
+    five_below_crawler = FiveBelowCrawler().run_crawler()
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 434, in run_crawler
+    self.goto_stuffed_a()
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 323, in goto_stuffed_a
+    self.wait.until(EC.visibility_of_element_located((By.LINK_TEXT, "stuffed animals"))).click()
+  File "C:\Users\colin\anaconda3\envs\pyinstaller_demo\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2021-05-31 16:36:45,452 - ERROR - 
+
+Paper Store Error error!
+Traceback (most recent call last):
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\main.py", line 20, in <module>
+    paper_store = PaperStoreCrawler().run()
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 480, in run
+    self.add_new_items("product-images--image-wrap", 'The Paper Store', "product-information--purchase_price", 'data-base-price')
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 57, in add_new_items
+    self.click_item(item, spreadsheet_items, class_name, site_name, price_name, price_found)
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 67, in click_item
+    to_click = WebDriverWait(self.driver, self.timeout).until(EC.element_to_be_clickable((By.PARTIAL_LINK_TEXT, item)))
+  File "C:\Users\colin\anaconda3\envs\pyinstaller_demo\lib\site-packages\selenium\webdriver\support\wait.py", line 71, in until
+    value = method(self._driver)
+  File "C:\Users\colin\anaconda3\envs\pyinstaller_demo\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 297, in __call__
+    element = visibility_of_element_located(self.locator)(driver)
+  File "C:\Users\colin\anaconda3\envs\pyinstaller_demo\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 128, in __call__
+    return _element_if_visible(_find_element(driver, self.locator))
+  File "C:\Users\colin\anaconda3\envs\pyinstaller_demo\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 148, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
