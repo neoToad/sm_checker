@@ -1,4 +1,5 @@
 __pycache__/
+items_data/
 .env
 crawler_log.txt
 
