@@ -3,23 +3,23 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 import re
 import selenium
-from sm_checker.Crawler import Crawler
-from sm_checker.test_soup import find_styles, get_image, download_image
-from sm_checker.xl_helpx import move_to_
+from Crawler import Crawler
+from test_soup import find_styles, get_image, download_image
+from xl_helpx import move_to_
 import time
 import logging
 
 logging.basicConfig(filename="crawler_log.txt", level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-# define a Handler which writes INFO messages or higher to the sys.stderr
-console = logging.StreamHandler()
-console.setLevel(logging.INFO)
-# set a format which is simpler for console use
-formatter = logging.Formatter('%(name)-12s: %(levelname)-8s %(message)s')
-# tell the handler to use this format
-console.setFormatter(formatter)
-# add the handler to the root logger
-logging.getLogger().addHandler(console)
+# # define a Handler which writes INFO messages or higher to the sys.stderr
+# console = logging.StreamHandler()
+# console.setLevel(logging.INFO)
+# # set a format which is simpler for console use
+# formatter = logging.Formatter('%(name)-12s: %(levelname)-8s %(message)s')
+# # tell the handler to use this format
+# console.setFormatter(formatter)
+# # add the handler to the root logger
+# logging.getLogger().addHandler(console)
 
 
 class ClairsCrawler(Crawler):

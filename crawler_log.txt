@@ -1738,3 +1738,283 @@ Traceback (most recent call last):
 selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a class="skip-link font-semibold skip-header text-center visuallyhidden show-on-focus" href="#SearchContainer">...</a> is not clickable at point (11, 19). Other element would receive the click: <div class="modal-root" data-tl-id="modal" data-gtm-vis-recent-on-screen-9334583_33="244" data-gtm-vis-first-on-screen-9334583_33="244" data-gtm-vis-total-visible-time-9334583_33="100" data-gtm-vis-has-fired-9334583_33="1">...</div>
   (Session info: chrome=90.0.4430.212)
 
+2021-05-31 20:15:43,878 - ERROR - 
+
+Five Below error!
+Traceback (most recent call last):
+  File "C:/Users/colin/PycharmProjects/checker/sm_checker/main.py", line 14, in <module>
+    five_below_crawler = FiveBelowCrawler().run_crawler()
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 434, in run_crawler
+    self.goto_stuffed_a()
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 323, in goto_stuffed_a
+    self.wait.until(EC.visibility_of_element_located((By.LINK_TEXT, "stuffed animals"))).click()
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\support\wait.py", line 71, in until
+    value = method(self._driver)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 128, in __call__
+    return _element_if_visible(_find_element(driver, self.locator))
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 148, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+2021-05-31 20:19:59,320 - ERROR - 
+
+Paper Store Error error!
+Traceback (most recent call last):
+  File "main.py", line 20, in <module>
+    paper_store = PaperStoreCrawler().run()
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 475, in run
+    self.load_items_from_site(self.listing_class_name)
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 193, in load_items_from_site
+    self.wanted_items.append(x.text)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webelement.py", line 76, in text
+    return self._execute(Command.GET_ELEMENT_TEXT)['value']
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=90.0.4430.212)
+
+2021-05-31 20:20:14,544 - ERROR - 
+
+Claires Error error!
+Traceback (most recent call last):
+  File "main.py", line 26, in <module>
+    claires = ClairsCrawler().run()
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 27, in __init__
+    super().__init__(site_to_check=
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 46, in __init__
+    self.driver.maximize_window()
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 737, in maximize_window
+    self.execute(command, params)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\urllib3\request.py", line 78, in request
+    return self.request_encode_body(
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\urllib3\request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\urllib3\poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\urllib3\connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\urllib3\connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\urllib3\connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\http\client.py", line 1344, in getresponse
+    response.begin()
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\http\client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\http\client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+2021-05-31 20:20:18,843 - ERROR - 
+
+Costco Error error!
+Traceback (most recent call last):
+  File "main.py", line 32, in <module>
+    costco = CostcoCrawler().run()
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 68, in __init__
+    super().__init__(site_to_check=
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 46, in __init__
+    self.driver.maximize_window()
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 737, in maximize_window
+    self.execute(command, params)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=90.0.4430.212)
+
+2021-05-31 20:20:24,008 - ERROR - 
+
+Game Stop Error!
+Traceback (most recent call last):
+  File "main.py", line 38, in <module>
+    game_stop = GSCrawler().run()
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 132, in __init__
+    super().__init__(site_to_check=
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 45, in __init__
+    self.driver.get(self.site_to_check)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\urllib3\request.py", line 78, in request
+    return self.request_encode_body(
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\urllib3\request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\urllib3\poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\urllib3\connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\urllib3\connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\urllib3\connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\http\client.py", line 1344, in getresponse
+    response.begin()
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\http\client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\http\client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+2021-05-31 20:20:30,551 - ERROR - Walmart error!
+Traceback (most recent call last):
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 301, in run
+    self.click_next_page()
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 281, in click_next_page
+    if self.driver.find_element_by_class_name('paginator-btn-next'):
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 564, in find_element_by_class_name
+    return self.find_element(by=By.CLASS_NAME, value=name)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".paginator-btn-next"}
+  (Session info: chrome=90.0.4430.212)
+
+2021-05-31 20:20:30,955 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))': /session/f46944031b996abba7f217ffcb906355/window
+2021-05-31 20:29:53,778 - ERROR - 
+
+Costco Error error!
+Traceback (most recent call last):
+  File "C:/Users/colin/PycharmProjects/checker/sm_checker/main.py", line 32, in <module>
+    costco = CostcoCrawler().run()
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 68, in __init__
+    super().__init__(site_to_check=
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 46, in __init__
+    self.driver.maximize_window()
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 737, in maximize_window
+    self.execute(command, params)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=90.0.4430.212)
+
+2021-05-31 20:30:05,233 - ERROR - 
+
+Game Stop Error!
+Traceback (most recent call last):
+  File "C:/Users/colin/PycharmProjects/checker/sm_checker/main.py", line 38, in <module>
+    game_stop = GSCrawler().run()
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 132, in __init__
+    super().__init__(site_to_check=
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 46, in __init__
+    self.driver.maximize_window()
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 737, in maximize_window
+    self.execute(command, params)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=90.0.4430.212)
+
+2021-05-31 20:30:44,733 - ERROR - Walmart error!
+Traceback (most recent call last):
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 300, in run
+    self.add_new_items('hover-zoom-hero-image', "Walmart", 'price-group')
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 57, in add_new_items
+    self.click_item(item, spreadsheet_items, class_name, site_name, price_name, price_found)
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 70, in click_item
+    self.find_image_and_price(item, class_name, site_name, price_name, price_found)
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 73, in find_image_and_price
+    image = self.get_image(class_name)
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 91, in get_image
+    return WebDriverWait(self.driver, self.timeout).until(EC.element_to_be_clickable((By.CLASS_NAME, class_name)))
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2021-05-31 20:31:43,312 - ERROR - 
+
+Target Error!
+Traceback (most recent call last):
+  File "C:/Users/colin/PycharmProjects/checker/sm_checker/main.py", line 56, in <module>
+    target = TargetCrawler().run()
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 222, in run
+    WebDriverWait(self.driver, self.timeout).until(EC.element_to_be_clickable((By.CLASS_NAME,
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2021-05-31 20:38:02,975 - ERROR - Walmart error!
+Traceback (most recent call last):
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 300, in run
+    self.add_new_items('hover-zoom-hero-image', "Walmart", 'price-group')
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 57, in add_new_items
+    self.click_item(item, spreadsheet_items, class_name, site_name, price_name, price_found)
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 70, in click_item
+    self.find_image_and_price(item, class_name, site_name, price_name, price_found)
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 73, in find_image_and_price
+    image = self.get_image(class_name)
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 91, in get_image
+    return WebDriverWait(self.driver, self.timeout).until(EC.element_to_be_clickable((By.CLASS_NAME, class_name)))
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2021-05-31 20:39:12,856 - ERROR - 
+
+Target Error!
+Traceback (most recent call last):
+  File "C:/Users/colin/PycharmProjects/checker/sm_checker/main.py", line 56, in <module>
+    target = TargetCrawler().run()
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 222, in run
+    WebDriverWait(self.driver, self.timeout).until(EC.element_to_be_clickable((By.CLASS_NAME,
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2021-05-31 20:55:47,352 - ERROR - Walmart error!
+Traceback (most recent call last):
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 301, in run
+    self.click_next_page()
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 281, in click_next_page
+    if self.driver.find_element_by_class_name('paginator-btn-next'):
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 564, in find_element_by_class_name
+    return self.find_element(by=By.CLASS_NAME, value=name)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".paginator-btn-next"}
+  (Session info: chrome=90.0.4430.212)
+
+2021-05-31 20:56:44,544 - ERROR - 
+
+Target Error!
+Traceback (most recent call last):
+  File "C:/Users/colin/PycharmProjects/checker/sm_checker/main.py", line 57, in <module>
+    target = TargetCrawler().run()
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 222, in run
+    WebDriverWait(self.driver, self.timeout).until(EC.element_to_be_clickable((By.CLASS_NAME,
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
