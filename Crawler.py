@@ -152,7 +152,8 @@ class Crawler:
                 if self.ws.cell(row=row, column=1).value == item:
                     if self.ws.cell(row=row, column=3).value == 'Yes':
                         # Move to_delete sheet
-                        move_to_(self.newRowLocation, self.wb, self.wb2, 'to_delete')
+
+                        move_to_(row, self.wb, self.wb2, 'to_delete')
                         self.change = True
                     self.ws.delete_rows(row)
                     self.ws.insert_rows(row)

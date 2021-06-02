@@ -4,7 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from dotenv import load_dotenv
-
+import time
 load_dotenv()
 
 
@@ -29,11 +29,13 @@ def update_site_live():
       click = driver.find_element_by_class_name('submit-row')
       click.click()
 
+
       driver.get('https://squishmallow-finder.herokuapp.com/import/')
       element = WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.XPATH, '//input[@name="employeefile"]')))
       element.send_keys("C:/Users/colin/PycharmProjects/checker/sm_checker/items_data/master_upload.xlsx")
       button = driver.find_element_by_tag_name('button')
       button.click()
+      time.sleep(10)
 
 
 def upload_images():

@@ -66,3 +66,6 @@ if __name__ == "__main__":
             print('waiting')
             time.sleep(3600)
             print('running')
+
+# update_site_live()
+

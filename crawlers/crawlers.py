@@ -289,6 +289,9 @@ class WalmartCrawler(Crawler):
         return price_element.text[1:]
 
     def run(self):
+        WebDriverWait(self.driver, self.timeout).until(EC.element_to_be_clickable((By.CLASS_NAME,
+                                                                                   'product-title-link')))
+
         items = self.driver.find_elements_by_class_name('product-title-link')
         for x in items:
             self.wanted_items.append(x.text)
@@ -340,8 +343,8 @@ class FiveBelowCrawler(Crawler):
         # Return true if website is current with spreadsheet.
         for row_num in range(2, self.ws.max_row + 1):
             item_series_name = self.ws.cell(row=row_num, column=1).value
-            item_style = self.ws.cell(row=row_num, column=2).value
-            item_instock = self.ws.cell(row=row_num, column=3).value
+            item_style = self.ws.cell(row=row_num, column=5).value
+            item_instock = self.ws.cell(row=row_num, column=6).value
             if item_series_name == item and item_style == style and in_stock == item_instock:
                 return True
 
