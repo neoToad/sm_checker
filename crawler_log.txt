@@ -18751,3 +18751,15 @@ Traceback (most recent call last):
 selenium.common.exceptions.WebDriverException: Message: chrome not reachable
   (Session info: chrome=91.0.4472.77)
 
+2021-06-02 11:59:59,168 - ERROR - 
+
+Walmart Error!
+Traceback (most recent call last):
+  File "C:/Users/colin/PycharmProjects/checker/sm_checker/main.py", line 44, in <module>
+    walmart = WalmartCrawler().run()
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 292, in run
+    WebDriverWait(self.driver, self.timeout).until(EC.element_to_be_clickable((By.CLASS_NAME,
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
