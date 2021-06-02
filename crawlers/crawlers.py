@@ -423,6 +423,13 @@ class FiveBelowCrawler(Crawler):
                     return x
         return 'N/A'
 
+    def check_for_series(self, spreadsheet_items):
+        series_still_available = [series.text for series in self.wanted_items]
+        print(series_still_available)
+        out_of_stock_series = self.diff(series_still_available, spreadsheet_items)
+
+        self.delete_oos_series(out_of_stock_series)
+
     def run_crawler(self):
         self.driver.get(self.site_to_check)
         self.driver.maximize_window()

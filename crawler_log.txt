@@ -18515,3 +18515,142 @@ Traceback (most recent call last):
 selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 89
 Current browser version is 91.0.4472.77 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
 
+2021-06-02 09:32:21,572 - ERROR - 
+
+Five Below error!
+Traceback (most recent call last):
+  File "C:/Users/colin/PycharmProjects/checker/sm_checker/main.py", line 14, in <module>
+    five_below_crawler = FiveBelowCrawler().run_crawler()
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 315, in __init__
+    super().__init__(site_to_check=
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 29, in __init__
+    self.driver = webdriver.Chrome('./chromedriver.exe', chrome_options=options)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 76, in __init__
+    RemoteWebDriver.__init__(
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 89
+Current browser version is 91.0.4472.77 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+
+2021-06-02 09:32:34,218 - ERROR - 
+
+Paper Store Error error!
+Traceback (most recent call last):
+  File "C:/Users/colin/PycharmProjects/checker/sm_checker/main.py", line 20, in <module>
+    paper_store = PaperStoreCrawler().run()
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 457, in __init__
+    super().__init__(site_to_check=
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 29, in __init__
+    self.driver = webdriver.Chrome('./chromedriver.exe', chrome_options=options)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 76, in __init__
+    RemoteWebDriver.__init__(
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 89
+Current browser version is 91.0.4472.77 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+
+2021-06-02 09:33:18,711 - ERROR - 
+
+Five Below error!
+Traceback (most recent call last):
+  File "C:/Users/colin/PycharmProjects/checker/sm_checker/main.py", line 14, in <module>
+    five_below_crawler = FiveBelowCrawler().run_crawler()
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 315, in __init__
+    super().__init__(site_to_check=
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 29, in __init__
+    self.driver = webdriver.Chrome('./chromedriver.exe', chrome_options=options)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 76, in __init__
+    RemoteWebDriver.__init__(
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 89
+Current browser version is 91.0.4472.77 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+
+2021-06-02 09:37:45,453 - ERROR - 
+
+Five Below error!
+Traceback (most recent call last):
+  File "C:/Users/colin/PycharmProjects/checker/sm_checker/main.py", line 14, in <module>
+    five_below_crawler = FiveBelowCrawler().run_crawler()
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 428, in run_crawler
+    self.driver.maximize_window()
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 737, in maximize_window
+    self.execute(command, params)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+
+2021-06-02 09:46:05,889 - ERROR - 
+
+Paper Store Error error!
+Traceback (most recent call last):
+  File "C:/Users/colin/PycharmProjects/checker/sm_checker/main.py", line 20, in <module>
+    paper_store = PaperStoreCrawler().run()
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 487, in run
+    self.add_new_items("product-images--image-wrap", 'The Paper Store', "product-information--purchase_price", 'data-base-price')
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 57, in add_new_items
+    self.click_item(item, spreadsheet_items, class_name, site_name, price_name, price_found)
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 70, in click_item
+    self.find_image_and_price(item, class_name, site_name, price_name, price_found)
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 73, in find_image_and_price
+    image = self.get_image(class_name)
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 469, in get_image
+    image_wrap = WebDriverWait(self.driver, self.timeout).until(EC.element_to_be_clickable((By.CLASS_NAME, class_name)))
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\support\wait.py", line 71, in until
+    value = method(self._driver)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 297, in __call__
+    element = visibility_of_element_located(self.locator)(driver)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 128, in __call__
+    return _element_if_visible(_find_element(driver, self.locator))
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 415, in _find_element
+    raise e
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 411, in _find_element
+    return driver.find_element(*by)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+
+2021-06-02 09:58:50,667 - ERROR - Walmart error!
+Traceback (most recent call last):
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\crawlers\crawlers.py", line 300, in run
+    self.add_new_items('hover-zoom-hero-image', "Walmart", 'price-group')
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 57, in add_new_items
+    self.click_item(item, spreadsheet_items, class_name, site_name, price_name, price_found)
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 70, in click_item
+    self.find_image_and_price(item, class_name, site_name, price_name, price_found)
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 73, in find_image_and_price
+    image = self.get_image(class_name)
+  File "C:\Users\colin\PycharmProjects\checker\sm_checker\Crawler.py", line 91, in get_image
+    return WebDriverWait(self.driver, self.timeout).until(EC.element_to_be_clickable((By.CLASS_NAME, class_name)))
+  File "C:\Users\colin\anaconda3\envs\squish_site_env\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
