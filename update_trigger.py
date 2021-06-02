@@ -39,8 +39,8 @@ def update_site_live():
 def upload_images():
       cmd = r'C:\Users\colin\\anaconda3\condabin\conda.bat activate squish_site_env &' \
             r'cd C:\Users\colin\PycharmProjects\squish_site\squishmallow-finder &' \
-            r'git commit -am "Automatic upload, adding images." &' \
             r'git add C:\Users\colin\PycharmProjects\squish_site\squishmallow-finder\media\images &' \
+            r'git commit -am "Automatic upload, adding images." &' \
             r'git push heroku master'
 
       os.system(cmd)
